@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Portfolio of Shashank D P – Final year CSE Engineer" />
+    <title>Shashank D P · Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#home">SDP</a>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+      <nav class="site-nav" aria-label="Main Navigation">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">🌓</button>
+      </nav>
+    </header>
+
+    <main id="home">
+      <section class="hero">
+        <div class="hero__content">
+          <p class="eyebrow">Hello, I'm</p>
+          <h1>Shashank D P</h1>
+          <p class="subtitle">Final Year CSE · Web Developer (Front‑end focused)</p>
+          <div class="hero__cta">
+            <a class="btn primary" href="#projects">View Projects</a>
+            <a class="btn outline" href="#contact">Get in Touch</a>
+            <a class="btn outline" href="assets/resume/Shashank_DP_Resume.pdf" download target="_blank" rel="noreferrer">Resume (PDF)</a>
+          </div>
+        </div>
+        <div class="hero__visual" aria-hidden="true">
+          <!-- Simple animated developer illustration (inline SVG) -->
+          <svg viewBox="0 0 320 280" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Illustration of a developer at a laptop">
+            <defs>
+              <linearGradient id="grad" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#5b8cff" stop-opacity="0.35"/>
+                <stop offset="100%" stop-color="#5b8cff" stop-opacity="0.05"/>
+              </linearGradient>
+            </defs>
+
+            <!-- Background blob -->
+            <ellipse cx="230" cy="70" rx="70" ry="40" fill="url(#grad)">
+              <animate attributeName="rx" values="66;72;66" dur="6s" repeatCount="indefinite"/>
+              <animate attributeName="ry" values="38;44;38" dur="6s" repeatCount="indefinite"/>
+            </ellipse>
+
+            <!-- Ground shadow -->
+            <ellipse cx="160" cy="240" rx="90" ry="12" fill="#000" opacity="0.15">
+              <animate attributeName="rx" values="85;95;85" dur="4s" repeatCount="indefinite"/>
+            </ellipse>
+
+            <!-- Character group (gentle bob) -->
+            <g>
+              <animateTransform attributeName="transform" type="translate" values="0 0; 0 -4; 0 0" dur="3.5s" repeatCount="indefinite"/>
+              <!-- Head -->
+              <circle cx="110" cy="80" r="22" fill="#ffd7b3"/>
+              <!-- Hair -->
+              <path d="M90,78 q20,-28 44,0 v6 q-22,-6 -44,0 z" fill="#1f2430"/>
+              <!-- Body -->
+              <rect x="86" y="102" width="48" height="58" rx="10" fill="#5b8cff"/>
+              <!-- Arms -->
+              <path d="M86,118 q-18,18 4,26 l10,4" fill="none" stroke="#ffd7b3" stroke-width="8" stroke-linecap="round"/>
+              <path d="M134,118 q18,18 -4,26 l-10,4" fill="none" stroke="#ffd7b3" stroke-width="8" stroke-linecap="round"/>
+            </g>
+
+            <!-- Laptop -->
+            <g>
+              <rect x="70" y="150" width="120" height="16" rx="6" fill="#2a2f3d"/>
+              <rect x="88" y="128" width="96" height="32" rx="6" fill="#1c2230"/>
+              <rect x="92" y="132" width="88" height="24" rx="4" fill="#0f1420"/>
+              <!-- Code glow -->
+              <g opacity="0.85">
+                <rect x="98" y="138" width="24" height="3" rx="1.5" fill="#5b8cff">
+                  <animate attributeName="opacity" values="0.2;1;0.2" dur="2.2s" repeatCount="indefinite"/>
+                </rect>
+                <rect x="98" y="144" width="42" height="3" rx="1.5" fill="#8fb1ff">
+                  <animate attributeName="opacity" values="0.2;1;0.2" dur="2.8s" repeatCount="indefinite"/>
+                </rect>
+                <rect x="98" y="150" width="32" height="3" rx="1.5" fill="#5b8cff">
+                  <animate attributeName="opacity" values="0.2;1;0.2" dur="2.5s" repeatCount="indefinite"/>
+                </rect>
+              </g>
+            </g>
+
+            <!-- Floating symbols -->
+            <g fill="#8fb1ff" opacity="0.8">
+              <circle cx="210" cy="120" r="4">
+                <animateTransform attributeName="transform" type="translate" values="0 0; 0 -10; 0 0" dur="4s" repeatCount="indefinite"/>
+              </circle>
+              <rect x="228" y="98" width="6" height="6" rx="2">
+                <animateTransform attributeName="transform" type="translate" values="0 0; 0 -8; 0 0" dur="3.2s" repeatCount="indefinite"/>
+              </rect>
+              <circle cx="246" cy="112" r="3">
+                <animateTransform attributeName="transform" type="translate" values="0 0; 0 -12; 0 0" dur="3.8s" repeatCount="indefinite"/>
+              </circle>
+            </g>
+          </svg>
+        </div>
+      </section>
+
+      <section id="about" class="section">
+        <h2>About</h2>
+        <p>
+          I'm a final‑year Computer Science & Engineering student specializing in modern web development.
+          I focus on building responsive, accessible UIs and performant front‑ends, with hands‑on practice
+          across the MERN stack. I enjoy translating ideas into delightful user experiences and writing
+          clean, maintainable code backed by solid fundamentals.
+        </p>
+      </section>
+
+      <section id="skills" class="section">
+        <h2>Skills</h2>
+        <ul class="chips">
+          <li>HTML5</li>
+          <li>CSS3</li>
+          <li>Tailwind CSS</li>
+          <li>JavaScript (ES6+)</li>
+          <li>TypeScript</li>
+          <li>React</li>
+          <li>Next.js</li>
+          <li>Node.js</li>
+          <li>Express</li>
+          <li>MongoDB</li>
+          <li>PostgreSQL</li>
+          <li>REST / GraphQL</li>
+          <li>Git & GitHub</li>
+          <li>Docker (basics)</li>
+        </ul>
+      </section>
+
+      <section id="projects" class="section">
+        <h2>Projects</h2>
+        <div class="grid projects-grid">
+          <article class="card">
+            <h3>Project: Dev Portfolio</h3>
+            <p>Responsive single‑page portfolio with theme toggle and accessible navigation.</p>
+            <div class="card__actions">
+              <a class="btn small" href="#" target="_blank" rel="noreferrer">Live</a>
+              <a class="btn small outline" href="#" target="_blank" rel="noreferrer">Code</a>
+            </div>
+          </article>
+          <article class="card">
+            <h3>Project: Task Tracker</h3>
+            <p>Full‑stack MERN app for managing tasks with JWT auth and filters.</p>
+            <div class="card__actions">
+              <a class="btn small" href="#" target="_blank" rel="noreferrer">Live</a>
+              <a class="btn small outline" href="#" target="_blank" rel="noreferrer">Code</a>
+            </div>
+          </article>
+          <article class="card">
+            <h3>Project: API Explorer</h3>
+            <p>React app to explore public APIs with search, caching, and pagination.</p>
+            <div class="card__actions">
+              <a class="btn small" href="#" target="_blank" rel="noreferrer">Live</a>
+              <a class="btn small outline" href="#" target="_blank" rel="noreferrer">Code</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="contact" class="section">
+        <h2>Contact</h2>
+        <p>Looking for SDE/Web dev roles, internships, or freelance web projects—let’s connect.</p>
+        <form id="contact-form" class="contact-form" action="#" method="post" novalidate>
+          <div class="grid two">
+            <label>
+              <span>Name</span>
+              <input type="text" name="name" placeholder="Your name" required />
+            </label>
+            <label>
+              <span>Email</span>
+              <input type="email" name="email" placeholder="you@example.com" required />
+            </label>
+          </div>
+          <label>
+            <span>Message</span>
+            <textarea name="message" rows="5" placeholder="How can I help?" required></textarea>
+          </label>
+          <button class="btn primary" type="submit">Send Message</button>
+          <p class="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© <span id="year"></span> Shashank D P. All rights reserved.</p>
+      <div class="social">
+        <!-- Replace # with your profiles -->
+        <a href="#" aria-label="GitHub">GitHub</a>
+        <a href="#" aria-label="LinkedIn">LinkedIn</a>
+        <a href="#" aria-label="Twitter">Twitter</a>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+  </html>
+
+
